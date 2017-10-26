@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+    <!--进度条-->
+    <com.daimajia.numberprogressbar.NumberProgressBar
+        android:padding="10dp"
+        android:id="@+id/mNumberProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/NumberProgressBar_Default"/>
+    <!--文本-->
+    <TextView
+        android:id="@+id/tv_update"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="----/----"/>
+
+    <TextView
+        android:id="@+id/tv_nofit"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="下载成功"/>
+
+</LinearLayout>

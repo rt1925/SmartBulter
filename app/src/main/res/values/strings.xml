@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">智能管家</string>
+    <string name="title1">服务管家</string>
+    <string name="title2">美女如云</string>
+    <string name="title3">微信精选</string>
+    <string name="title4">个人中心</string>
+    <string name="sex_man">男</string>
+    <string name="sex_woman">女</string>
+    <string name="desc">这个人很懒什么介绍都没有</string>
+    <string name="update_suc">更新成功</string>
+    <string name="update_fil">更新失败</string>
+    <string name="alert_isempty">输入框不能为空</string>
+    <string name="text_setting" />
+    <string name="app_version_zh">版本号</string>
+    <string name="root_welcome">你好！我是小优</string>
+    <string name="text_more_length">输入长度大于30！</string>
+    <string name="login_fil">登录失败</string>
+    <string name="password_notequal">两次密码不正确</string>
+    <string name="update_edit_fil">更新失败</string>
+    <string name="email_not">邮箱未验证，请先验证邮箱</string>
+</resources>

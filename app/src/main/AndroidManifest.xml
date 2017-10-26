@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="imooc.com.smartbulter">
+
+    <application
+        android:name=".application.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data android:name="com.amap.api.v2.apikey"
+            android:value="135c559b2d24e2beb674af3fbcefc09e">
+        </meta-data>
+
+        <activity android:name=".ui.SplashActivity"
+            android:theme="@style/NoActivityFullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity"
+            android:theme="@style/MainTheme">
+        </activity>
+        <!--引导-->
+        <activity android:name=".ui.GuideActivity"
+            android:theme="@style/NoActivityFullscreen">
+        </activity>
+        <!--s设置-->
+        <activity android:name=".ui.settingActivity"
+            android:label="设置"/>
+        <!--菜谱-->
+        <activity android:name=".ui.FoodActivity"
+            android:label="食材大全"/>
+        />
+        <!--菜谱详情-->
+        <activity android:name=".ui.FoodDetailActivity" />
+        <!--美女图片-->
+        <activity android:name=".ui.GirlActivity"
+            android:label="美女图片">
+        </activity>
+        <!--聊天机器人-->
+        <activity android:name=".ui.ButleActivity"
+            android:label="聊天机器人"/>
+        <!--登录-->
+        <activity android:name=".ui.LoginActivity"
+            android:label="登录"/>
+        <!--更新-->
+        <activity android:name=".ui.UpdateActivity"
+            android:label="更新">
+        </activity>
+        <!--注册-->
+        <activity android:name=".ui.RegisteredActivity"
+            android:label="注册">
+        </activity>
+        <!--忘记密码-->
+        <activity android:name=".ui.ForgetPasswordActivity"
+            android:label="忘记密码"/>
+        <!--快递查询-->
+        <activity android:name=".ui.CourierActivity"
+            android:label="快递查询"/>
+        <!--号码归属地查询-->
+        <activity android:name=".ui.PhoneActivity"
+            android:label="号码归属地查询"/>
+        <!--新闻显示-->
+        <activity android:name=".ui.WeChatActivity" />
+        <!--二维码-->
+        <activity android:name=".ui.QrCcodeActivity"
+            android:label="我的二维码"/>
+        <!--地图-->
+        <activity android:name=".ui.LocationActivity"
+            android:label="高德地图"/>
+        <!--版本信息-->
+        <activity android:name=".ui.AboutActivity"
+            android:label="版本信息"/>
+        <!--扫描结果-->
+        <activity android:name=".ui.QrResultActivity"
+            android:label="扫描结果"/>
+        <!--SMS服务-->
+        <service android:name=".service.SmsService"/>
+    </application>
+
+    <!--获取日志 -->
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <!--允许联网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--获取GSM（2g）、WCDMA（联通3g）等网络状态的信息  -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!--获取wifi网络状态的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!--保持CPU 运转，屏幕和键盘灯有可能是关闭的,用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!--获取sd卡写的权限，用于文件上传和下载-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--允许读取手机状态 用于创建BmobInstallation-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!--获取手机录音机使用权限，听写、识别、语义理解需要用到此权限 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <!--外存储读权限，构建语法需要用到此权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <!--配置权限，用来记录应用配置信息 -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <!--短信权限-->
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <!--窗口权限-->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!--地图SDK（包含其搜索功能）需要的基础权限-->
+    <!--允许程序访问CellID或WiFi热点来获取粗略的位置-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+
+</manifest>

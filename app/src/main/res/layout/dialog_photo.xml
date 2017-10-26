@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@android:color/transparent">
+
+
+        <Button
+            android:paddingBottom="5dp"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="拍照"
+            android:id="@+id/btn_carmera"
+            android:background="@drawable/button_bg"/>
+        <Button
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="从图库里选择一张"
+            android:id="@+id/btn_gallery"
+            android:background="@drawable/button_bg"/>
+        <Button
+            android:layout_marginBottom="5dp"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="取消"
+            android:id="@+id/btn_cancel"
+            android:background="@drawable/button_bg"/>
+
+
+
+</LinearLayout>
